@@ -71,7 +71,7 @@
           </div>
           <div class="form-group right">
             <label for="experience" class="label-title">Income</label>
-            <input type="range" min="20" max="100" step="5"  value="0" id="experience" class="form-input" onChange="change();" style="height:28px;width:78%;padding:0;">
+            <input type="range" min="20" max="100" step="5"  value="0" id="experience" class="form-input" onChange="slide();" style="height:28px;width:78%;padding:0;">
             <span id="range-label">20K</span>
           </div>
         </div>
@@ -100,7 +100,7 @@
       var rangeLabel = document.getElementById("range-label");
       var experience = document.getElementById("experience");
 
-      function change() {
+      function slide() {
       rangeLabel.innerText = experience.value + "K";
       }
     </script>
